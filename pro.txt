@@ -1,0 +1,31 @@
+clasa @y
+inceput clasa{
+privat 
+    intreg @c;
+public
+    caracter @d;
+}sfarsit clasa
+
+caracter @c1;
+caracter @c2;
+intreg @a1;
+intreg @v [ 10 ];
+intreg @a3;
+intreg @a2 := 3;
+intreg @i ;
+intreg @f ( intreg @x , intreg @y ) inceput_functie{ @a2 := @a3; }sfarsit_functie ;
+begin_progr
+daca ( @a1 < @a3 ) atunci{ @a2 := @a3; }end_atunci;
+daca ( @a1 < @a3 ) atunci{ @a2 := @a3; }end_atunci altfel{ @a3 := @a2; }end_altfel;
+
+cat_timp ( @a1 >= @a3 ) executa{ @a1 := @a3; }end_executa;
+
+executa{ @a1 := @a3; }end_executa cat_timp ( @a1 <= @a3 );
+
+pentru ( @i := 1 , @i <= @a2 , @i := @i + @a2 ) executa{ @a1 := @a2 + @a2; }end_executa;
+
+@c1 sircat @c2;
+
+@a(5,5,5);
+
+end_progr
